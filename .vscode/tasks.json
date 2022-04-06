@@ -1,0 +1,27 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"type": "cppbuild",
+			"label": "C/C++: clang++ etkin dosyayı derle",
+			"command": "/usr/bin/clang++",
+			"args": [
+				"-std=c++17",
+				"-stdlib=libc++",
+				"-fdiagnostics-color=always",
+				"-g",
+				"${file}",
+				"-o",
+				"${fileDirname}/${fileBasenameNoExtension}.out"
+			],
+			"options": {
+				"cwd": "${fileDirname}"
+			},
+			"problemMatcher": [
+				"$gcc"
+			],
+			"group": "build",
+			"detail": "derleyici: /usr/bin/clang++"
+		}
+	]
+}
